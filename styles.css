@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+.header {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 20px;
+}
+
+.checkboxes {
+  color: #ffffff;
+  position: fixed;
+  top: 6rem;
+  right: 2rem;
+}
+
+/* Add some basic styles to the navbar */
+#navbar {
+  position: fixed;
+  background-color: #cfcece;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+}
+
+/* Make the navbar sticky */
+#navbar {
+  font-size: large;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  margin-left: 45%;
+}
+
+nav a {
+  color: #c7c7c7;
+  text-decoration: none;
+  padding: 1% 15px;
+}
+
+#viewer-container {
+  display: -webkit-flex;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(170, 169, 169);
+}
+
+.left-container {
+  height: 100%;
+  width: 20%;
+  z-index: 999;
+  background-color: white;
+  border: solid 1px #888888;
+  padding: 5px 20px;
+  margin-left: -20px;
+  margin-top: -6px;
+}
+
+.ifc-tree-menu {
+  border-top: solid 1px #888888;
+  width: 100%;
+  height: 50vh;
+  overflow-y: auto;
+  background-color: #fff;
+  padding: 1rem;
+  position: relative;
+
+}
+
+.fetch-container {
+  overflow-y: scroll;
+  background-color: #fff;
+  width: 100%;
+  height: 50vh;
+  position: relative;
+}
+
+.sensor-value {
+  background-color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0 5px;
+  border: 2px solid #cdcdcd;
+  width: 73%;
+}
+
+#fetch-button {
+  height: 25px;
+  width: 100px;
+  background-color: #efefef;
+  border: 2px solid #cdcdcd;
+  padding: 0 5px;
+}
+
+.getsensor {
+  display: flex;
+  width: 100%;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  border: 2px solid #cdcdcd;
+}
+
+.row label {
+  width: 30px;
+  height: 50px;
+  display: inline-block;
+  align-items: center;
+  font-size: 13px;
+}
+
+.row input {
+  width: 66px;
+  height: 20px;
+  margin-top: 10px;
+  margin: 10px 5px;
+}
+
+#filter-button {
+  margin-top: 10px;
+  height: 20px;
+}
+
+#json-body tr td {
+  border: 1px solid gray;
+}
+
+/*Tree view: https://www.w3schools.com/howto/howto_js_treeview.asp*/
+li ul {
+  user-select: none;
+  cursor: pointer;
+}
+
+/* Remove default bullets */
+ul,
+#myUL {
+  list-style-type: none;
+}
+
+/* Remove margins and padding from the parent ul */
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the caret/arrow */
+.caret {
+  cursor: pointer;
+  user-select: none;
+  /* Prevent text selection */
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.caret-down::before {
+  transform: rotate(90deg);
+}
+
+/* Hide the nested list */
+.nested {
+  display: none;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.active {
+  display: block;
+}

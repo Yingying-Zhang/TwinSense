@@ -1,0 +1,23 @@
+{
+  "name": "wivmethod",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "rollup -c -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "rollup": "^3.25.1"
+  },
+  "dependencies": {
+    "three": "^0.135.0",
+    "web-ifc-viewer": "^1.0.216"
+  }
+}

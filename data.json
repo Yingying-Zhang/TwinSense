@@ -1,0 +1,93 @@
+[
+  {
+    "measurement": "temperature",
+    "tags": {
+      "location": "room101",
+      "sensor": "DHT22",
+      "pulisher": "ZYY",
+      "agent": "DC"
+    },
+    "time": "2023-06-24T09:00:00Z",
+    "fields": {
+      "value": 25.5
+    }
+  },
+  {
+      "measurement": "temperature",
+      "tags": {
+        "location": "room101",
+        "sensor": "DHT22",
+        "pulisher": "ZYY",
+        "agent": "DC"
+      },
+      "time": "2023-06-24T10:00:00Z",
+      "fields": {
+        "value": 25.5
+      }
+    },
+    {
+      "measurement": "temperature",
+      "tags": {
+        "location": "room101",
+        "sensor": "DHT22",
+        "pulisher": "ZYY",
+        "agent": "DC"
+      },
+      "time": "2023-06-24T11:00:00Z",
+      "fields": {
+        "value": 26.5
+      }
+    },
+    {
+      "measurement": "temperature",
+      "tags": {
+        "location": "room101",
+        "sensor": "DHT22",
+        "pulisher": "ZYY",
+        "agent": "DC"
+      },
+      "time": "2023-06-24T12:00:00Z",
+      "fields": {
+        "value": 27.2
+      }
+    },
+  {
+    "measurement": "humidity",
+    "tags": {
+      "location": "room102",
+      "sensor": "hygrometer",
+      "pulisher": "ZYY",
+      "agent": "DC"
+    },
+    "time": "2023-06-24T13:00:00Z",
+    "fields": {
+      "value": 55.2
+    }
+  },
+  {
+    "measurement": "temperature",
+    "tags": {
+      "location": "room103",
+      "sensor": "thermometer",
+      "pulisher": "ZYY",
+      "agent": "DC"
+    },
+    "time": "2023-06-24T14:00:00Z",
+    "fields": {
+      "value": 26.2
+    }
+  },
+  {
+    "measurement": "humidity",
+    "tags": {
+      "location": "room104",
+      "sensor": "hygrometer",
+      "pulisher": "ZYY",
+      "agent": "DC"
+    },
+    "time": "2023-06-24T15:00:00Z",
+    "fields": {
+      "value": 56.8
+    }
+  }
+]

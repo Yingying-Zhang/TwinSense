@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="../../../favicon.ico" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>IFC.js</title>
+</head>
+
+<body>
+
+
+  <header>
+    <nav id="navbar">
+      <div class="container">
+        <h1 class="logo">TwinSense</h1>
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div id="viewer-container"> </div>
+
+
+  <div class="checkboxes">
+    <div>
+      <input type="checkbox" checked="true" id="IFCWALLSTANDARDCASE" />
+      IFCwalls
+    </div>
+    <div>
+      <input type="checkbox" checked="true" id="IFCSLAB" />
+      IFCslabs
+    </div>
+    <div>
+      <input type="checkbox" checked="true" id="IFCFURNISHINGELEMENT" />
+      IFCfurnitures
+    </div>
+    <div>
+      <input type="checkbox" checked="true" id="IFCDOOR" />
+      IFCdoors
+    </div>
+    <div>
+      <input type="checkbox" checked="true" id="IFCPLATE" />
+      IFCplate
+    </div>
+    <div>
+      <input type="checkbox" checked="true" id="IFCMEMBER" />
+      IFCmember
+    </div>
+  </div>
+
+
+
+  <div class="left-container">
+
+    <div class="ifc-tree-menu">
+      <ul id="myUL">
+        <li id="tree-root">
+          <span class="caret">Beverages</span>
+          <ul class="nested">
+            <li>Water</li>
+            <li>Coffee</li>
+            <li>
+              <span class="caret">Tea</span>
+              <ul class="nested">
+                <li>Black Tea</li>
+                <li>White Tea</li>
+                <li>
+                  <span class="caret">Green Tea</span>
+                  <ul class="nested">
+                    <li>Sencha</li>
+                    <li>Gyokuro</li>
+                    <li>Matcha</li>
+                    <li>Pi Lo Chun</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="fetch-container">
+      <div class="getsensor">
+        <h2 class="sensor-value">SENSORS</h2>
+        <button id="fetch-button">GET ALL</button>
+      
+    </div>
+    <pre id="json-container"></pre>
+    <div id="filter-container">
+      <div class="row">
+        <label for="filter-key">Filter Key:</label>
+        <input type="text" id="filter-key">
+
+        <label for="filter-value" style="line-height: 40px;">Value:</label>
+        <input type="text" id="filter-value">
+        <button id="filter-button">Filter</button>
+      </div>
+    </div>
+    <table id="json-table">
+      <thead>
+        <tr>
+          <th>Key</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody id="json-body"></tbody>
+    </table>
+  </div>
+
+  </div>
+
+  <script src="bundle.js"></script>
+</body>
+
+</html>
